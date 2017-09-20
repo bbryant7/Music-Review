@@ -4,8 +4,9 @@ import React, { Component } from 'react';
 export default class NavBar extends Component {
   render() {
     return (
-      <nav className="">
-      </nav>
+      <div>
+      PLAY WHAT???????
+      </div>
     )
   }
 }
