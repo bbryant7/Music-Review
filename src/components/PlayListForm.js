@@ -83,20 +83,34 @@ export default class PlayListForm extends Component {
 
 render() {
   return (
-    <div>
+    <div className="d-flex justify-content-end">
     <form onSubmit={this.addToList}>
-    <input name="username" type="text" placeholder="Enter your UserName"
+    <div>
+    <div className= "form-group">
+    <label className="form-control-label" for="username">User Name: </label>
+    <input name="username" type="text" className="form-control" placeholder="Enter your User Name"
      onChange={this.handleUserChange} value={this.state.userName}/>
-
-    <input name="artist" type="text" placeholder="Artist Name"
+    <br></br>
+    </div>
+    <div className= "form-group">
+    <label className="form-control-label" for="artist">Artist/Band: </label>
+    <input name="artist" type="text"className="form-control" placeholder="Artist Name"
      onChange={this.handleArtistChange} value={this.state.songArtist}/>
-
-    <input name="title" type="text" placeholder="Song Title"
+     <br></br>
+     </div>
+     <div className= "form-group">
+     <label className="form-control-label"for="title">Song Title: </label>
+    <input name="title" type="text" id="title" className="form-control" placeholder="Song Title"
      onChange={this.handleTitleChange} value={this.state.songTitle}/>
-
-    <textarea rows="4" cols="50" name="notes" type="text" placeholder="Notes"  onChange={this.handleNotesChange} value={this.state.songNotes}></textarea>
-
-    <button type="submit">Submit</button>
+     <br></br>
+     </div>
+     <div className= "form-group">
+     <label className="form-control-label" for="notes">Song Notes: </label>
+    <textarea rows="4" cols="50" className="form-control" name="notes" type="text" placeholder="Notes"  onChange={this.handleNotesChange} value={this.state.songNotes}></textarea>
+    <br></br>
+    </div>
+    <button className="btn btn-info" type="submit">Add Song</button>
+    </div>
     </form>
     </div>
   )

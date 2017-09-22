@@ -9,12 +9,10 @@ class App extends Component {
     return (
       <div className="App">
        <NavBar/>
-        <div >
-          <h2>Music Reviews</h2>
-        </div>
-        <PlayListForm/>
-        <PlayList/>
-
+       <div className="d-flex justify-content-around">
+       <PlayListForm/>
+       <PlayList/>
+       </div>
       </div>
     );
   }
