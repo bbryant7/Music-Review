@@ -10,7 +10,7 @@ export default class PlayListItem extends Component {
               <br></br>
               <h4 className="card-title">{song.songTitle}</h4>
               <p>Artist/Band: {song.songArtist} </p>
-              <p>Notes: {song.Notes} </p>
+              <p>Notes: {song.songNotes} </p>
               <p>User: {song.userName}</p>
             </div>
           </div>

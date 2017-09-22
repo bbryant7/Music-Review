@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Quicksand', sans-serif;
   background-color: #E5E5DF;
   color: #3e3935;
 }
@@ -21,22 +21,28 @@ h1 {
   padding-right: 15px;
   padding-bottom: 15px;
   margin-right: 0;
+  border: 1px solid #C3C3BD;
 }
 
 .card p {
   margin-bottom: 0;
 }
+
+.card-title {
+  color: #46C0DC;
+}
 .form-group{
-  display: flex;
+  /*display: flex;*/
+  text-align: left;
+  margin-bottom: 0;
 }
 
 .form-control-label {
   color: white;
-  /*font-weight: bold;*/
-   text-shadow: 2px 2px #696664;
+   text-shadow: 1px 1px #696664;
    font-size: 20px;
    margin-right: 10px;
-   /*flex-direction: row;*/
+
 }
 
 .form-control {
@@ -44,7 +50,7 @@ h1 {
 }
 
 .btn {
-  text-shadow: 2px 2px #696664;
+  text-shadow: 1px 1px #696664;
   padding: 15px;
   font-size: 18px;
   margin-bottom: 15px;
@@ -52,8 +58,4 @@ h1 {
 
 .list {
   margin-left: 25px;
-}
-
-.form {
-  text-align: right;
 }

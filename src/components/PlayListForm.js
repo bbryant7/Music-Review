@@ -83,9 +83,9 @@ export default class PlayListForm extends Component {
 
 render() {
   return (
-    <div className="d-flex justify-content-end">
-    <form onSubmit={this.addToList}>
     <div>
+    <form onSubmit={this.addToList}>
+    <div >
     <div className= "form-group">
     <label className="form-control-label" for="username">User Name: </label>
     <input name="username" type="text" className="form-control" placeholder="Enter your User Name"
